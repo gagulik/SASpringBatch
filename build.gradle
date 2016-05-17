@@ -13,7 +13,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'gs-relational-data-access'
+    baseName = 'SASpringBatchTest'
     version =  '0.1.0'
 }
 
@@ -26,8 +26,10 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter-batch")
     compile("org.springframework:spring-jdbc")
     compile("com.h2database:h2")
+    compile("org.hsqldb:hsqldb")
     testCompile("junit:junit")
 }
 
